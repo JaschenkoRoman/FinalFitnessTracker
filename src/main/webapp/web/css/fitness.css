@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #fbc376;
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    border: 0;
+    box-shadow: none;
+    padding-top: 3.5px;
+    padding-bottom: 3.5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #fbc376;
+    color: #000000;
+    border-radius: 5px;
+}
+
+button:active {
+    background-color: #ffffb3;
+}
+
+.service {
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+}
+
+.wrapper {
+    flex: 1 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+.pane {
+    background-color: #fff;
+    margin-left: 20px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.pane-wrapper {
+    display: flex;
+    margin: 0 auto 20px;
+}
+
+.content-panel {
+    width: 100%;
+}
+
+@media all and (max-width: 1000px) {
+    .pane-wrapper {
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .pane {
+        margin: 10px 0;
+        width: 100%;
+        padding: 5px;
+        margin: 10px 0 0 0;
+        box-sizing: border-box;
+    }
+
+    .pane * {
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    .content-panel {
+        width: 100%;
+    }
+}
+
+.disabled {
+    background: #767474;
+}
+
+.error {
+    padding: 10px;
+    color: #cc3300;
+    /*    border-radius: 9px;*/
+}
+
+/* end global */
+
+/* header */
+header {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    /*    background-color: #ffe121;*/
+    background-image: url("/sport/web/images/header-img.png");
+    background-size: 100% 150px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.logo-wrapper {
+    padding: 10px;
+    margin-left: 40px;
+}
+
+.logo {
+    color: #fbc376;
+    font-size: 2.7rem;
+}
+
+.lang-buttons-wrapper {
+    margin-right: 10px;
+}
+
+.lang-change {
+    background-color: #fbc376;
+
+}
+
+/* end header */
+
+/* start footer */
+
+footer {
+    flex: 0 0 auto;
+    /*    background-color: #ffe121;*/
+    text-align: center;
+    color: #fbc376;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-image: url("/sport/web/images/footer-img.png");
+    background-size: 100% 100px;
+}
+
+/* end footer */
+
+
+/*log in */
+
+.log-in-pane {
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.log-in-pane * {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 7px;
+    border-radius: 5px;
+}
+
+.log-in-pane input {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.log-in-wrapper {
+    display: flex;
+    align-items: center;
+    /*    height: 100%;*/
+    margin-top: 60px;
+}
+
+/*@media all and (max-width: 1000px) {*/
+/*   .log-in-wrapper {
+       margin-top: 0;
+   }*/
+/*}*/
+
+/*end log in*/
+
+/* left menu */
+.left-menu {
+    width: 15%;
+    height: 100%;
+    color: #fbc376;
+    background-image: url("/sport/web/images/left-pane.png");
+    background-size: 100%;
+    border-radius: 5px;
+}
+
+.left-menu li a {
+    padding: 3px;
+    font-size: 0.95rem;
+    color: #fbc376;
+}
+.menu-items {
+    font-size: 18px;
+}
+
+.log-out {
+    display: block;
+    margin: 10px auto 0;
+}
+
+@media all and (max-width: 1000px) {
+    .left-menu {
+        width: 100%;
+    }
+
+    .log-out {
+        margin: 20px 10px;
+    }
+}
+
+/* end left menu */
+
+/*user list*/
+.user-table {
+    padding: 5px;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 50px; /*added by me*/
+}
+
+.user-table td, tr, th {
+    padding: 5px;
+    border: 2px #000 solid;
+    text-align: center;
+}
+
+/*end user list*/
+/*user*/
+
+.login-wrapper {
+    border-bottom: 4px solid #767474;
+}
+
+.program-name-wrapper {
+    border-bottom: 4px solid #767474;
+}
+.new-program-name-wrapper {
+    border-bottom: 4px solid #767474;
+    padding-bottom: 20px;
+}
+.exercise-separator {
+    border-bottom: 2px solid #767474;
+}
+
+.exercise-input {
+    padding-top: 20px;
+}
+
+.common-program-info {
+    padding-top: 20px;
+}
+
+.user-login {
+    font-size: 1.4rem;
+}
+
+.program-name {
+    font-size: 1.4rem;
+}
+
+.exercise-list-name {
+    font-size: 1.3rem;
+    padding: 20px;
+}
+
+.new-program-name {
+    padding: 20px;
+}
+
+.user-edit {
+    margin: 10px;
+}
+
+.user-edit * {
+    margin: 5px;
+}
+
+/*end user*/
+/* edit panel */
+
+.edit-panel input {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 40%;
+    text-align: center;
+}
+
+.edit-panel select {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 40%;
+    text-align-last: center;
+}
+
+.content-textarea {
+    width: 70%;
+    height: 200px;
+    min-width: 40%;
+    min-height: 100px;
+    max-width: 90%;
+}
+.program-panel * {
+    margin: 3px;
+    float: right;
+}
+
+.edit-panel * {
+    margin: 3px;
+}
+
+/* end edit panel */
+.tools {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-field  {
+    border-radius: 5px;
+}

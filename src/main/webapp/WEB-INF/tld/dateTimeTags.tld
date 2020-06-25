@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib
+        version="2.1"
+        xmlns="http://java.sun.com/xml/ns/javaee"
+>
+    <tlib-version>1.0</tlib-version>
+    <short-name>ttg</short-name>
+    <uri>datetimetags</uri>
+    <tag>
+        <name>datestamp</name>
+        <tag-class>com.epam.fitness.tag.DateTag</tag-class>
+        <attribute>
+            <name>date</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.time.LocalDate</type>
+        </attribute>
+        <body-content>empty</body-content>
+    </tag>
+    <tag>
+        <name>datetimestamp</name>
+        <tag-class>com.epam.fitness.tag.DateTimeTag</tag-class>
+        <attribute>
+            <name>date</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.time.LocalDateTime</type>
+        </attribute>
+        <body-content>empty</body-content>
+    </tag>
+</taglib>
